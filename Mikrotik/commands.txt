@@ -1,0 +1,9 @@
+#/system identity print
+#/ip address print
+#/interface print
+#/interface ethernet print
+#/interface wireless print
+#/interface bridge print
+/system resource print
+#/system script add name="daily-reboot" source="/system reboot"
+#/system scheduler add name="daily-reboot-schedule" on-event=daily-reboot start-time=03:00:00 interval=1d
